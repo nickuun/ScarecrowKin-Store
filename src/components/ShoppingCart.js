@@ -2,7 +2,6 @@ import React, {useRef, useState } from "react";
 import "./ShoppingCart.css";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { RiDeleteBin6Line } from "react-icons/ri";
-import emailjs from 'emailjs-com';
 
 function ShoppingCart({
   visibility,
@@ -25,37 +24,6 @@ function ShoppingCart({
     }
     return cartTotal;
   }
-
-  const sendEmail = (e) => {
-    
-    e.preventDefault();
-
-    const cartItems = products
-      .map((product) => `${product.name} x ${product.count}`)
-      .join("\n");
-
-    const emailParams = {
-      name: name,
-      products: cartItems,
-      notes: notes
-    };
-
-    emailjs
-      .send(
-        'service_bblbh4c',
-        'template_um36n0e',
-        emailParams,
-        '8qZo3bn4puLSOrHAm'
-      )
-      .then(
-        (result) => {
-          console.log('Email sent successfully:', result.text);
-        },
-        (error) => {
-          console.log('Failed to send email:', error.text);
-        }
-      );
-  };
 
   return (
     <div className="modal" style={{ display: visibility ? "block" : "none" }}>
@@ -105,7 +73,7 @@ function ShoppingCart({
           ))}
           <h2>Total: {getCartTotal()}</h2>
           {products.length > 0 && (
-             <form ref={formRef} onSubmit={sendEmail}>
+             <form ref={formRef}>
              <label>Name</label>
              <input type="text" name="user_name" />
              <label>Email</label>
