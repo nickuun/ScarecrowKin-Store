@@ -13,35 +13,38 @@ import img12 from '../assets/img12.jpg'
 import img13 from '../assets/img13.jpg'
 import img14 from '../assets/img14.jpg'
 
+//THIS IS WHERE WE CHANGE THE PRODUCS IN THE 
+
 export const SliderProducts = [{
-    name: 'SKIN',
+    name: 'Clothing',
     detail: 'Super Skin Care',
     price: '25',
     img: img1
 },
 {
-    name: 'SKIN',
+    name: 'Clothing',
     detail: 'Super Skin Care',
     price: '30',
     img: img2
 },
 {
-    name: 'NATURE',
+    name: 'Jewellery',
     detail: 'Super Skin Care',
     price: '25',
     img: img3
 },{
-    name: 'SKIN',
+    name: 'Jewellery',
     detail: 'Super Skin Care',
     price: '30',
     img: img3
 },{
-    name: 'SKIN',
+    name: 'Clothing',
     detail: 'Super Skin Care',
     price: '30',
     img: img2
 },
 ]
+
 export const ProductsData = [{
     name: 'SKIN',
     detail: 'Super Skin Care',
