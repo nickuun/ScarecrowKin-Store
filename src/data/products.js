@@ -13,7 +13,7 @@ import img12 from '../assets/img12.jpg'
 import img13 from '../assets/img13.jpg'
 import img14 from '../assets/img14.jpg'
 
-//THIS IS WHERE WE CHANGE THE PRODUCS IN THE 
+//THIS IS WHERE WE CHANGE THE PRODUCS IN THE WEBSITE
 
 export const SliderProducts = [{
     name: 'Clothing',
