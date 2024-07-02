@@ -36,7 +36,7 @@ const Slider = ({addProductToCart, setCurrentProduct}) => {
                 <span>{slide.detalis}</span>
               </div>
               <span>R{slide.price}</span>
-              <div onClick={(e) =>{ e.stopPropagation();  addProductToCart(slide)}}>Add to Cart</div>
+              <div onClick={() => addProductToCart(slide)}>Add to Cart</div>
             </div>
 
             <img src={slide.img} alt="product" className="img-p" /></div>
