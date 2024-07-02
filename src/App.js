@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/header/Header";
 import Hero from "./components/Hero/Hero";
-import Products from "./components/Products/Producs";
+import Products from "./components/Products/Products";
 import Slider from "./components/Slider/Slider";
 import Footer from "./components/Footer/Footer";
 import DrillDown from "./components/Products/Drilldown"
