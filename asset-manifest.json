@@ -1,29 +1,15 @@
 {
   "files": {
-    "main.css": "/ScarecrowKin-Store/static/css/main.056a9cd1.css",
-    "main.js": "/ScarecrowKin-Store/static/js/main.4c357526.js",
-    "static/media/testimonialHero.png": "/ScarecrowKin-Store/static/media/testimonialHero.be51563da7af51b38130.png",
-    "static/media/img12.jpg": "/ScarecrowKin-Store/static/media/img12.1924b2f7f919600c7c97.jpg",
-    "static/media/img4.jpg": "/ScarecrowKin-Store/static/media/img4.1924b2f7f919600c7c97.jpg",
-    "static/media/img8.jpg": "/ScarecrowKin-Store/static/media/img8.1924b2f7f919600c7c97.jpg",
-    "static/media/img11.jpg": "/ScarecrowKin-Store/static/media/img11.25f7ea5079d22a8602e0.jpg",
-    "static/media/img3.jpg": "/ScarecrowKin-Store/static/media/img3.25f7ea5079d22a8602e0.jpg",
-    "static/media/img7.jpg": "/ScarecrowKin-Store/static/media/img7.25f7ea5079d22a8602e0.jpg",
-    "static/media/img10.jpg": "/ScarecrowKin-Store/static/media/img10.e1635ebe006cd8fc413f.jpg",
-    "static/media/img14.jpg": "/ScarecrowKin-Store/static/media/img14.e1635ebe006cd8fc413f.jpg",
-    "static/media/img2.jpg": "/ScarecrowKin-Store/static/media/img2.e1635ebe006cd8fc413f.jpg",
-    "static/media/img6.jpg": "/ScarecrowKin-Store/static/media/img6.e1635ebe006cd8fc413f.jpg",
-    "static/media/img1.jpg": "/ScarecrowKin-Store/static/media/img1.a292c2329b3babdde253.jpg",
-    "static/media/img13.jpg": "/ScarecrowKin-Store/static/media/img13.a292c2329b3babdde253.jpg",
-    "static/media/img5.jpg": "/ScarecrowKin-Store/static/media/img5.a292c2329b3babdde253.jpg",
-    "static/media/img9.jpg": "/ScarecrowKin-Store/static/media/img9.a292c2329b3babdde253.jpg",
-    "static/media/hero.png": "/ScarecrowKin-Store/static/media/hero.6ae8a0a32ef5252db7e4.png",
-    "index.html": "/ScarecrowKin-Store/index.html",
-    "main.056a9cd1.css.map": "/ScarecrowKin-Store/static/css/main.056a9cd1.css.map",
-    "main.4c357526.js.map": "/ScarecrowKin-Store/static/js/main.4c357526.js.map"
+    "main.css": "/static/css/main.77cb8a63.css",
+    "main.js": "/static/js/main.e09c9ce5.js",
+    "static/media/testimonialHero.png": "/static/media/testimonialHero.be51563da7af51b38130.png",
+    "static/media/hero.png": "/static/media/hero.6ae8a0a32ef5252db7e4.png",
+    "index.html": "/index.html",
+    "main.77cb8a63.css.map": "/static/css/main.77cb8a63.css.map",
+    "main.e09c9ce5.js.map": "/static/js/main.e09c9ce5.js.map"
   },
   "entrypoints": [
-    "static/css/main.056a9cd1.css",
-    "static/js/main.4c357526.js"
+    "static/css/main.77cb8a63.css",
+    "static/js/main.e09c9ce5.js"
   ]
 }
