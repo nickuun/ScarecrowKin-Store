@@ -1,148 +1,54 @@
-import img1 from '../assets/img1.jpg'
-import img2 from '../assets/img2.jpg'
-import img3 from '../assets/img3.jpg'
-import img4 from '../assets/img4.jpg'
-import img5 from '../assets/img5.jpg'
-import img6 from '../assets/img6.jpg'
-import img7 from '../assets/img7.jpg'
-import img8 from '../assets/img8.jpg'
-import img9 from '../assets/img9.jpg'
-import img10 from '../assets/img10.jpg'
-import img11 from '../assets/img11.jpg'
-import img12 from '../assets/img12.jpg'
-import img13 from '../assets/img13.jpg'
-import img14 from '../assets/img14.jpg'
+import Papa from 'papaparse';
 
-//THIS IS WHERE WE CHANGE THE PRODUCS IN THE WEBSITE
+// Function to fetch and parse the CSV
+const fetchAndParseCSV = async () => {
+  const response = await fetch('/stocklist/StockList.csv');
+  const csvText = await response.text();
+  return new Promise((resolve, reject) => {
+    Papa.parse(csvText, {
+      header: true,
+      complete: (results) => {
+        resolve(results.data);
+      },
+      error: (error) => {
+        reject(error);
+      },
+    });
+  });
+};
 
-export const SliderProducts = [{
-    name: 'Clothing',
-    detail: 'Super Skin Care',
-    price: '25',
-    img: img1
-},
-{
-    name: 'Clothing',
-    detail: 'Super Skin Care',
-    price: '30',
-    img: img2
-},
-{
-    name: 'Jewellery',
-    detail: 'Super Skin Care',
-    price: '25',
-    img: img3
-},{
-    name: 'Jewellery',
-    detail: 'Super Skin Care',
-    price: '30',
-    img: img3
-},{
-    name: 'Clothing',
-    detail: 'Super Skin Care',
-    price: '30',
-    img: img2
-},
-]
+// Function to prepare the product data
+export const getProductsData = async () => {
+  console.log("trying to fetch csv");
+  const data = await fetchAndParseCSV();
+  const products = data.map(item => {
+    console.log("Mapping Item", item)
+    const imagePaths = [];
+    for (let i = 1; i <= 10; i++) {
+      const imagePath = `/Items/${item.Category}/${item.SubCategory}/${item.ID}/img${i}.jpg`;
+      imagePaths.push(imagePath);
+    }
 
-export const ProductsData = [{
-    name: 'SKIN',
-    detail: 'Super Skin Care',
-    price: '25',
-    img: img1,
-    type: 'skin care',
-},
-{
-    name: 'SKIN',
-    detail: 'Super Skin Care',
-    price: '30',
-    img: img2,
-    type: 'skin care',
-},
-{
-    name: 'NATURE',
-    detail: 'Super Skin Care',
-    price: '25',
-    img: img3,
-    type: 'skin care',
-},
-{
-    name: 'Foundation',
-    detail: 'Super Skin Care',
-    price: '25',
-    img: img4,
-    type: 'foundation',
-},
-{
-    name: 'CONDITIONER',
-    detail: 'Super Skin Care',
-    price: '30',
-    img: img5,
-    type: 'conditioner',
-},
-{
-    name: 'NATURE',
-    detail: 'Super Skin Care',
-    price: '25',
-    img: img6,
-    type: 'skin care',
-},
-{
-    name: "CONDITIONER",
-    details: 'Best Conditioner',
-    price: '30',
-    img: img7,
-    type: 'conditioner'
-}
-,
-{
-    name: "CONDITIONER",
-    details: 'Best Conditioner',
-    price: '30',
-    img: img8,
-    type: 'conditioner'
-},
-{
-    name: "CONDITIONER",
-    details: 'Best Conditioner',
-    price: '30',
-    img: img9,
-    type: 'conditioner'
-},
-{
-    name: "CONDITIONER",
-    details: 'Best Conditioner',
-    price: '30',
-    img: img10,
-    type: 'conditioner'
-},
-{
-    name: "FOUNDATION",
-    details: 'Nourish your skin',
-    price: '12',
-    img: img11,
-    type: 'foundation'
-},
-{
-    name: "FOUNDATION",
-    details: 'Nourish your skin',
-    price: '12',
-    img: img12,
-    type: 'foundation'
-},
-{
-    name: "FOUNDATION",
-    details: 'Nourish your skin',
-    price: '12',
-    img: img13,
-    type: 'foundation'
-},
-{
-    name: "FOUNDATION",
-    details: 'Nourish your skin',
-    price: '12',
-    img: img14,
-    type: 'foundation'
-}
+    // Extract size options dynamically
+    const sizeOptions = [];
+    for (const key in item) {
+      if (key.startsWith('size:') && item[key] !== '') {
+        sizeOptions.push({ size: key.replace('size:', ''), value: item[key] });
+      }
+    }
 
-]
+    return {
+      name: item.Description,
+      description: item.Description,
+      price: item.Price,
+      img: imagePaths[0], // The first image as the showcase image
+      images: imagePaths, // Array of all images
+      Category: item.Category,
+      SubCategory: item.SubCategory,
+      // sizeTotal: item["size:total"],
+      sizeOptions: sizeOptions // Include size options in the product object
+    };
+  });
+  console.log("products ARE", products);
+  return products;
+};

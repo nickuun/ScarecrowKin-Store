@@ -18,7 +18,7 @@ import css from "./Footer.module.css";
 
 const Footer = ({ setCartVisible }) => {
   return (
-    <div classNaame={css.cFooterWrapper}>
+    <div>
       <div className={css.cFooter}>
         <div className={css.block}>
           <div className={css.detail}>
@@ -101,7 +101,7 @@ const Footer = ({ setCartVisible }) => {
             </span>
             <span className={css.pngLine}>
               <LocationMarkerIcon className={css.icon} />
-              <span>111 north avenu Orlando, Fl 32801</span>
+              <span>Durbanville, Cape Town, 7550</span>
             </span>
           </div>
         </div>

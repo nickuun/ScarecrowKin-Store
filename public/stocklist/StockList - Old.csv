@@ -1,0 +1,70 @@
+Category,SubCategory,ID,Description,Price,size:total,size:1 size,size:xxs,size:xs,size:s,size:m,size:l,size:xl,size:xxl,size:xxxl
+Clothing,Accessories,CA-001-01,Socks Knee High - White Stripes,R20.00,4,4,,,,,,,,
+Clothing,Accessories,CA-001-02,Socks Knee High -  Grey Stripes,R20.00,2,2,,,,,,,,
+Clothing,Accessories,CA-001-03,Socks Knee High -  Dark Grey Stripes,R20.00,0,0,,,,,,,,
+Clothing,Accessories,CA-001-04,Socks Knee High - Red Stripes,R20.00,2,2,,,,,,,,
+Clothing,Accessories,CA-001-05,Socks Knee High - Brown Stripes,R20.00,2,2,,,,,,,,
+Clothing,Accessories,CA-001-06,Socks Knee High -  Faded Blue Stripes,R20.00,2,2,,,,,,,,
+Clothing,Accessories,CA-001-07,Socks Knee High - Yellow Stripes,R20.00,2,2,,,,,,,,
+Clothing,Accessories,CA-001-08,Socks Knee High - Purple Stripes,R20.00,2,2,,,,,,,,
+Clothing,Accessories,CA-001-09,Socks Knee High - Pink Stripes,R20.00,4,4,,,,,,,,
+Clothing,Accessories,CA-001-10,Socks Knee High - Pink Maroon,R20.00,1,1,,,,,,,,
+Clothing,Accessories,CA-002-01,Socks Sport - Blue,R20.00,1,1,,,,,,,,
+Clothing,Accessories,CA-002-02,Socks Sport - Red,R20.00,1,1,,,,,,,,
+Clothing,Accessories,CA-002-03,Socks Sport - Green,R20.00,1,1,,,,,,,,
+Clothing,Accessories,CA-002-01,Stockings Fishnet - 1,R30.00,0,0,,,,,,,,
+Clothing,Accessories,CA-002-02,Stockings Fishnet - 2,R30.00,0,0,,,,,,,,
+Clothing,Accessories,CA-002-03,Stockings Fishnet - 3,R30.00,2,2,,,,,,,,
+Clothing,Accessories,CA-002-04,Stockings Fishnet - 4,R30.00,0,0,,,,,,,,
+Clothing,Accessories,CA-003-01,Shoe Laces - Bright Green,R15.00,1,1,,,,,,,,
+Clothing,Accessories,CA-003-02,Shoe Laces - Green,R15.00,1,1,,,,,,,,
+Clothing,Accessories,CA-003-02,Shoe Laces - Dark Green,R15.00,1,1,,,,,,,,
+Clothing,Accessories,CA-003-03,Shoe Laces - Bright Orange,R15.00,1,1,,,,,,,,
+Clothing,Accessories,CA-003-04,Shoe Laces - Orange,R15.00,0,0,,,,,,,,
+Clothing,Accessories,CA-003-05,Shoe Laces - Dark Orange,R15.00,1,1,,,,,,,,
+Clothing,Accessories,CA-003-04,Shoe Laces - Light Purple,R15.00,0,0,,,,,,,,
+Clothing,Accessories,CA-003-05,Shoe Laces - Dark Purple,R15.00,0,0,,,,,,,,
+Clothing,Accessories,CA-003-06,Shoe Laces - Pink,R15.00,1,1,,,,,,,,
+Clothing,Accessories,CA-003-07,Shoe Laces - Yellow,R15.00,2,2,,,,,,,,
+Clothing,Accessories,CA-003-08,Shoe Laces - Black,R15.00,0,0,,,,,,,,
+Clothing,Accessories,CA-004-01,Tie - Stripes White,R40.00,1,1,,,,,,,,
+Clothing,Accessories,CA-004-02,Tie - Stripes Red,R40.00,1,1,,,,,,,,
+Clothing,Accessories,CA-004-03,Tie - Stripes Green,R40.00,1,1,,,,,,,,
+Clothing,Accessories,CA-004-04,Tie - Stripes Purple,R40.00,0,0,,,,,,,,
+Clothing,Accessories,CA-004-05,Tie - Stripes Blue,R40.00,1,1,,,,,,,,
+Clothing,Accessories,CA-004-06,Tie - Skulls Grey,R40.00,1,1,,,,,,,,
+Clothing,Accessories,CA-004-07,Tie - Skulls White,R40.00,0,0,,,,,,,,
+Clothing,Accessories,CA-004-08,Tie - Stars and Skulls Red,R40.00,1,1,,,,,,,,
+Clothing,Accessories,CA-004-09,Tie - Checked Green,R40.00,1,1,,,,,,,,
+Clothing,Accessories,CA-004-10,Tie - Checked White Skull,R40.00,0,0,,,,,,,,
+Clothing,Accessories,CA-004-11,Tie - Checked Pink Skull,R40.00,0,0,,,,,,,,
+Clothing,Accessories,CA-004-12,Tie -  Black and Pink Pirate,R40.00,0,0,,,,,,,,
+Clothing,Accessories,CA-004-13,Tie - Plain Green,R40.00,1,1,,,,,,,,
+Clothing,Accessories,CA-004-14,Tie - Plain Orange,R40.00,1,1,,,,,,,,
+Clothing,Accessories,CA-004-15,Tie - Plain Pink,R40.00,0,0,,,,,,,,
+Clothing,Pants and Skirts,CP-001-01,Pleasted Skirt - Grey Plaid,R130.00,0,,0,0,0,0,0,0,0,0
+Clothing,Pants and Skirts,CP-002-01,Pleated Skirt - Black,R130.00,1,,0,0,0,1,0,0,0,0
+Clothing,Pants and Skirts,CP-002-02,Pants - Plaid - Black/Red,R240.00,6,,1,2,1,1,1,0,0,0
+Clothing,Pants and Skirts,CP-002-03,Pants - Cargo - White Camo,R220.00,3,,0,0,1,0,0,1,0,1
+Clothing,Pants and Skirts,CP-002-04,Pants - Cargo - Imitation Leather,R230.00,4,,1,1,1,1,0,0,0,0
+Clothing,T-Shirts and Shirts,CT-001-01,Pixie Grunge Crop Top,R100.00,0,,0,0,0,0,0,0,0,0
+Clothing,T-Shirts and Shirts,CT-002-01,Corset Style Shirt,R250.00,1,,0,0,1,0,0,0,0,0
+Clothing,T-Shirts and Shirts,CT-003 - 01,Crackle - Forgot How To Talk,R250.00,2,,0,0,0,1,0,1,0,0
+Clothing,T-Shirts and Shirts,CT-003 - 02,Crackle - Pot Head,R250.00,1,,0,0,0,1,0,0,0,0
+Clothing,T-Shirts and Shirts,CT-003 - 03,Crackle - Lick Me,R250.00,1,,0,0,0,1,0,0,0,0
+Clothing,T-Shirts and Shirts,CT-003 - 04,Crackle - Four Eyed Freak,R250.00,1,,0,0,0,0,1,0,0,0
+Clothing,T-Shirts and Shirts,CT-003 - 05,Crackle - Life is Precious,R250.00,0,,0,0,0,0,0,0,0,0
+Clothing,T-Shirts and Shirts,CT-004 - 01,Scarecrow - Name,R150.00,2,,0,0,0,1,0,1,0,0
+Clothing,Underwear,CU-001-02,Lingerie - Black,R110.00,0,,0,0,0,0,0,0,0,0
+Clothing,Underwear,CU-001-03,Lingerie - Black,R110.00,0,,0,0,0,0,0,0,0,0
+Clothing,Underwear,CU-001-04,Lingerie - Black,R110.00,0,,0,0,0,0,0,0,0,0
+Clothing,Underwear,CU-001-05,Lingerie - Black,R110.00,0,,0,0,0,0,0,0,0,0
+Clothing,Underwear,CU-001-01,Lingerie - Black,R110.00,0,,0,0,0,0,0,0,0,0
+Clothing,Cloaks and Coats,CC-002-01,Cloak - Sleveless Short Crow Black ,R150.00,0,,0,0,0,0,0,0,0,0
+Clothing,Cloaks and Coats,CC-002-02,Cloak - Sleveless Long Raven Black ,R200.00,1,,0,0,0,1,0,0,0,0
+Clothing,Cloaks and Coats,CC-003-01,Battlevest - Grey,R200.00,1,,0,0,1,0,0,0,0,0
+Clothing,Cloaks and Coats,CC-003-02,Battlevest - Black,R200.00,0,,0,0,0,0,0,0,0,0
+Clothing,Cloaks and Coats,CC-003-03,Battlevest - Light Blue,R200.00,0,,0,0,0,0,0,0,0,0
+Clothing,Cloaks and Coats,CC-003-04,Battlevest - Medium Blue,R200.00,1,,0,0,0,1,0,0,0,0
+Clothing,Cloaks and Coats,CC-003-05,Battlevest - Dark Blue,R200.00,1,,0,0,0,0,1,0,0,0
+Clothing,Cloaks and Coats,CC-004-01,Waistcoat,R250.00,0,,0,0,0,0,0,0,0,0

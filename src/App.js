@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/header/Header";
 import Hero from "./components/Hero/Hero";
-import Products from "./components/Products/Products";
+import Products from "./components/Products/Producs";
 import Slider from "./components/Slider/Slider";
 import Footer from "./components/Footer/Footer";
 import DrillDown from "./components/Products/Drilldown"
@@ -28,12 +28,21 @@ function App() {
   }, [productsInCart]);
 
   const addProductToCart = (product) => {
-    const newProducts = {
-      ...product,
-      count: 1,
-    };
-    setProducts([...productsInCart, newProducts]);
+    setProducts((prevProducts) => {
+      const existingProductIndex = prevProducts.findIndex(
+        (item) => item.name === product.name && item.selectedSize === product.selectedSize
+      );
+  
+      if (existingProductIndex !== -1) {
+        const updatedProducts = [...prevProducts];
+        updatedProducts[existingProductIndex].count += 1;
+        return updatedProducts;
+      } else {
+        return [...prevProducts, { ...product, id: Date.now(), count: 1 }];
+      }
+    });
   };
+  
 
   const onQuantityChange = (productID, count) => {
     setProducts((oldState) => {
@@ -59,7 +68,16 @@ function App() {
   return (
     <div className="App">
       {console.log("CUrrent product is: ", currentProduct)}
-      {currentProduct ? <DrillDown currentProduct={currentProduct} setCurrentProduct={setCurrentProduct}></DrillDown> : ""}
+
+
+      {currentProduct ? (
+        <DrillDown
+          currentProduct={currentProduct}
+          setCurrentProduct={setCurrentProduct}
+          addProductToCart={addProductToCart}  // Pass addProductToCart here
+        ></DrillDown> ) : ("")
+      }
+
       <ShoppingCart
         visibility={cartsVisibility}
         products={productsInCart}

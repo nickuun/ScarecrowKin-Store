@@ -1,43 +1,96 @@
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #00000055;
-    z-index: 10;
-  }
-  
-  .drilldown {
-    width: 60%;
-    height: 90%;
-    margin: 2rem auto;
-    background: #000000;
-    color: #8900c4;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  .drilldown .header {
-    display: flex;
-    background: #2ba000;
-    color: #000000;
-    padding: 10px 20px;
-    justify-content: space-between;
-  }
-  .image {
-    height: 500px;
-  width: auto;
-  object-fit: contain;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000055;
+  z-index: 10;
+}
+
+.drilldown {
+  width: 70%; /* Increased width */
+  height: 80%; /* Increased height */
+  margin: 2rem auto;
+  background: #000000;
+  color: #8900c4;
+  padding: 2rem; /* Increased padding */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.drilldown .header {
+  display: flex;
+  background: #2ba000;
+  color: #000000;
+  padding: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 2rem; /* Increased gap */
+  margin-top: 1rem;
 }
 
-.item {
-  
+.image {
+  width: 100%; /* Adjusted width */
+  height: auto;
+  object-fit: contain;
+  border-radius: 1rem;
+  background: #222;
+  padding: 1rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Changed to flex-start */
+  gap: 1rem;
+  padding-left: 2rem; /* Added padding to the left */
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #8900c4;
+}
+
+.add-to-cart-btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background: #8900c4;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  align-self: flex-start; /* Align button to the start */
+}
+
+.add-to-cart-btn:hover {
+  background: #6a009d;
+}
+
+.stock-info {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.image-counter {
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 1rem;
+  text-align: center;
 }
